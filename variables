@@ -1,0 +1,5 @@
+#variable
+
+grocery = "Veggies"
+product = 34 * 6
+chips = 4
