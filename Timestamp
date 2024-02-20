@@ -1,0 +1,20 @@
+import time
+
+timestamp = time.strftime('%H:%M:%S')
+print(timestamp)
+timestamp = int(time.strftime('%H'))
+print(timestamp)
+timestamp = int(time.strftime('%M'))
+print(timestamp)
+timestamp = int(time.strftime('%S'))
+print(timestamp)
+hour = int(input("Enter the hour: "))
+
+if(hour == 0 and hour < 12):
+  print("Morning not again")
+elif(hour == 12 and hour < 16):
+  print("Afternoon")
+elif(hour == 16 and hour < 20):
+  print("Evening")
+else:
+  print("Eww now bye night")
