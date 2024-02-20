@@ -1,0 +1,18 @@
+dic = {222: "Sky", 111: "Isha", 333: "Rain", 444: "Paper"}
+print("Choose one no.: 111, 222, 333, 444")
+chosen_no = int(input("The chosen no. is: "))
+
+if chosen_no in dic:
+  print(dic[chosen_no])
+else:
+  print("Invalid choice. Please choose a valid number.")
+print(dic)
+print(dic.keys())
+print(dic.get(111))
+print(dic.values())
+print(dic.items)
+
+for key in dic:
+  print(dic[key])
+for key, value in dic.items():
+  print(f"The value corresponding to the key {key} is {dic[key]}")
