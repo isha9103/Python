@@ -1,0 +1,12 @@
+letter = "Hey my name is {1} and I am from {0}"
+country = "India"
+name = "Isha"
+print(letter.format(country, name))
+print(f"Hey my name is {name} and I am from {country}") #in f string we can directly add variable
+
+txt = "for only {price:.3f} dollars!!"
+print(txt.format(price = 49.09999999)) #2f takes decimal upto 2 places onmly.
+#can also be written as
+price = 49.09999999
+txt = f"for only {price:.2f} dollars!!"
+print(txt)
