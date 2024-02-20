@@ -1,0 +1,11 @@
+ep1 = {23:1, 33:2, 43:3, 53:4}
+ep2 = {13:1, 24:2, 37:3, 55:4}
+ep1.update(ep2)
+ep1.clear()
+print(ep1)
+emot = {}
+print(emot)
+ep1.pop(33)
+ep1.popitem() #removes last item
+del ep1[23]
+print(ep1)
