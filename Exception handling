@@ -1,0 +1,19 @@
+a = input("Number dedo: ")
+print(f"Multiply of number {a} hai: ")
+
+try:
+ for i in range(1, 11):
+   print(f"{int(a)} X {i} = {int(a)*i}")
+#except Exception as e: #7and 8 code are both correct
+except:
+  print("Nooo")
+
+print("mja ni aya")
+print("Hmmmm")
+
+try:
+  num = input("Number daalen: ")
+  a = [6, 3, 4]
+  print(a[int(num)])
+except IndexError:
+  print("Glt index hai")
