@@ -1,0 +1,14 @@
+def func():
+  try:
+    l = [1, 4, 7, 9]
+    i = int(input("Index batao: "))
+    print(l[i])
+    return 1
+  except:
+    print("Glt index hai")
+    return 0
+  finally:  #always executed
+    print("me hmesha aunga")
+    #print("This will not execute in a function")
+x = func()
+print(x)
