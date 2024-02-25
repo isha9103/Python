@@ -1,0 +1,36 @@
+questions = [
+  [],
+  ["What is Vegetable?", "Banana", "Pea", "Pineapple", "Mango", 2],
+  ["What is fruit?", "Banana", "Pea", "Tomatao", "Beans", 1],
+  ["What is juice?", "bird", "Pea", "sky", "Mango", 4],
+  ["What is bird?", "pigeon", "Pea", "Pineapple", "Mango", 1],
+  ["What is flower?", "rose", "Pea", "Pineapple", "Mango", 1],
+  ["What is Time?", "Banana", "Hour,Minute,Seconds", "Pineapple", "Mango", 2],
+  ["What is PC?", "Banana", "Pea", "Computer", "Beans", 3],
+  ["What is flower?", "rose", "Pea", "Pineapple", "Mango", 1],
+  ["Which language was used to create fb?", "Python", "French", "Php", "None", 4],
+  ["What is Time?", "Banana", "Hour,Minute,Seconds", "Pineapple", "Mango", 2],
+]
+
+levels = [0, 1000, 2000, 3000, 5000, 10000, 20000, 40000, 80000, 160000, 320000]
+
+money = 0
+for i in range(1, len(questions)):
+  question = questions[i]
+  print(f"\n\n {i} Question for Rs. {levels[i]}")
+  print(f"{question[0]}")
+  print(f"a. {question[1]}         b.{question[2]}  ")
+  print(f"c. {question[3]}         d.{question[4]}  ")
+  reply = int(input("Enter answer by choosing between (1-4): "))
+  if (reply == question[-1]):
+    print(f"Congratulations you won Rs.{levels[i]}")
+    if (i == 5):
+      money = 10000
+    elif (i == 10):
+      money = 320000
+  else:
+    print("Wrong answer")
+    break
+ 
+print(f"aap jeetgaye, {money}")
+    
