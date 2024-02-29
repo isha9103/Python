@@ -1,0 +1,13 @@
+f = open('file2.txt', 'w')
+lines = ['sky', 'bird', 'dog', 'tree', 'rain', '10', '12', '10']
+f.writelines(lines)
+
+with open('file2.txt', 'r') as f:
+  print(type(f))
+  f.seek(10) #move to the 10th byte
+  print(f.tell()) #tells the current position(till where it is seeked)
+  data = f.read(10) #read 10 bytes after seeking the 10th byte
+  print(data)
+  f.close()
+
+#f.truncate(5) #truncate the file to 5 bytes(edit the file to only 5 characters)
