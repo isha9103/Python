@@ -1,0 +1,21 @@
+x = 10 #global variable
+#print(x)
+
+def func():
+  x = 5
+  print(f"1. the local variable is {x}")
+  print("hey")
+  
+print(f"2. the global variable is {x}")
+func()
+print(f"3. The global variable is {x}")
+
+def newfunc():
+  global x #makes x 3 globally
+  y = 4
+  x = 3
+  print(f"1. {y}")
+
+newfunc()
+print(f"2. {x}") #prints 3
+#print(y) #shows error because y is local variable and cannot be accessed outside func.
