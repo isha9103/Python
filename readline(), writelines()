@@ -1,0 +1,23 @@
+#readline() reads one line at a time
+f = open('file.txt', 'r')
+i = 0
+while True:
+  i = i + 1
+  line = f.readline()
+  if not line:
+    break
+  m1 = int(line.split(",")[0])
+  m2 = int(line.split(",")[1])
+  m3 = int(line.split(",")[2])
+  print(f"Marks of {i} in maths are: {m1*2}")
+  print(f"Marks of {i} in english are: {m2*2}")
+  print(f"Marks of {i} in science are: {m3*2}")
+  print(line)
+
+#writelines()
+f = open('file.txt', 'w')
+lines = ['sky\n', 'bird\n', 'dog\n']
+f.writelines(lines)
+f.close()
+
+#write() is used when th elist is too big
