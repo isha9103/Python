@@ -1,0 +1,32 @@
+#read
+f = open('hey.txt', 'r') #r mode is specified by default
+#f = open('hey.txt') #will open in
+#print(f)
+text = f.read()
+print(text)
+f.close()
+
+#write(w)
+f = open('hey2.txt', 'w') #open a new file
+f.write('Heyaaaaaaaa')
+f.close()
+
+#append(a)
+#used when content is added to the end of the prexisting content without deleting 
+#the prev one that is why append is used insted of write
+f = open('hey.txt', 'a')
+f.write('Heyaaaaaaaa')
+f.close()
+
+#with statement makes it easier for us to not use f. again and again
+with open('hey.txt', 'a'):
+          f.write("heyaaaaaaaaayyyyyyyy")
+#create(x)
+#shows an error if the file already exists
+
+#text(t)  (rt)
+#by default it is a text file so no need to write t
+
+#binary(b)  (rb)
+f = open('hey.txt', 'rb')
+#open as a binary file
